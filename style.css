@@ -35,12 +35,19 @@ body{
     top: -15px;
     left: -15px;
     z-index: 10;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+   
 }
 
 .open #settings{
     width: 100%;
     height: 50%;
     border-radius: 0;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
 }
 
 #gear{
@@ -158,3 +165,5 @@ i:hover, #close:hover{
 #worktimemin, #worktimesec, #shortbreak, #longbreak{
     width: 40px;
 }
+
+
