@@ -10,7 +10,27 @@
 <body>
     <div id="container">
         <div id="settings">
-            <i class="fa fa-gear"></i>
+            <div class="toggle">
+                <i id="gear" class="fa fa-gear"></i>
+                <i id="close" class="fas fa-times"></i>
+            </div>
+            <div id="settingscontainer">
+                <div id="sound">
+                    <h2><u>Settings</u></h2>
+                    <div class="containeroptions">
+                        <div id="mute"><p>Sound</p><input type="checkbox" name="soundoption" id="soundoption" checked></div>
+                        <div id="vibrate"><p>Vibration</p><input type="checkbox" name="vibrateoption" id="vibrateoption"></div>
+                    </div>
+                </div>
+                <div id="time">
+                    <h2><u>Timer</u></h2>
+                    <div class="containeroptions">
+                        <div id="ws"><p>Work Session</p><input type="number" name="worktimemin" id="worktimemin" value="25"><input type="number" name="worktimesec" id="worktimesec" value="00"></div>
+                        <div id="sb"><p>Short Break</p><input type="number" name="shortbreak" id="shortbreak" value="5"></div>
+                        <div id="lb"><p>Long Break</p><input type="number" name="longbreak" id="longbreak" value="25"></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="circle">
             <div id="minutes">25</div>
@@ -20,7 +40,7 @@
         <div id="countcycle">2/4</div>
         <div id="buttons">
             <div id="play"><i class="fas fa-play"></i></div> 
-            <!-- <i class="fas fa-pause"></i>  -->
+            <div id="pause"><i class="fas fa-pause"></i></div>
         </div>
     </div>
 
