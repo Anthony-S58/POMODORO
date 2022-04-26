@@ -7,36 +7,37 @@ toggle.addEventListener('click',() => {
   
 });
 
+
+function getvalue(){
+
+    let sound = document.getElementById("soundoption").checked;
+    console.log("sound : " + sound);
+
+    let vibrate = document.getElementById("vibrateoption").checked;
+    console.log("vibrate : " + vibrate);
+
+    let wtm = document.getElementById("worktimemin").value;
+    let wts = document.getElementById("worktimesec").value;
+    console.log("Work session : " + wtm + " minutes" + " et " + wts + " secondes");
+
+    let sb = document.getElementById("shortbreak").value;
+    let lb = document.getElementById("longbreak").value;
+    console.log("Short break : " + sb + " minutes");
+    console.log("Long break : " + lb + " minutes");
+
+
+}
+
 let play = document.getElementById("play");
 let pause = document.getElementById("pause");
-
 
 
 play.addEventListener('click', function (){
     play.style.display="none";
     pause.style.display="flex";
 
- 
 });
 
-min = document.getElementById("#worktimemin".value);
-minutes = document.getElementById("minutes");
-var cpt = min;
-
-// minutes.innerHTML= min;
-
-console.log(min);
-
-
-
-timer = setInterval(function(){
-    if(cpt>0){
-        --cpt;
-        document.getElementById("#secondes").innerHTML = cpt ;
-    }else{
-        clearInterval(timer);
-    }
-}, 1000);
 
 pause.addEventListener('click', () => {
     pause.style.display="none";
