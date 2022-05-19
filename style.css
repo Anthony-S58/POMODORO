@@ -43,7 +43,7 @@ body{
 
 .open #settings{
     width: 100%;
-    height: 50%;
+    height: 60%;
     border-radius: 0;
     transition-property: width;
     transition-duration: 0.3s;
@@ -116,12 +116,14 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 50px;
-}
-#minutes, #secondes{
     font-size: 2.5em;
+
 }
+/* #minutes, #secondes{
+    font-size: 2.5em;
+} */
 
 #taskname{
 font-size: 2em;
